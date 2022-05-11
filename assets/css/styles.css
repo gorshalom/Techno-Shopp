@@ -1,5 +1,49 @@
+
+
+*{
+  font-family: 'Lato', sans-serif;
+}
+
+h5{
+font-weight: 900 ;
+font-size:x-large;
+}
+
+
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+.card{
+  /* min-width: 300px; */
+  /* max-width: 350px; */
+  /* display: flex; */
+  /* display: flex;
+  justify-content: space-evenly; */
+  /* margin: 100px 70px; */
+  /* min-width: 400px ; */
+  margin: 100px 50px;
+}
+
+img{
+  width: 400px;
+  height: 280px;
+}
+
+.card-body{
+  background-color: #E8E8E8;
+}
+
+.container{
+background-color: #000000;
+
+}
+/* .card {
+  /* min-width: 400px; */
+  /* margin: auto 100px;
+  display: flex;
+  justify-content: space-evenly;
+} *
+
