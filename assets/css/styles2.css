@@ -6,8 +6,11 @@ body {
   margin-left: 0;
 }
 
-i {
-  display: inline;
+.social-media {
+  display: flex;
+
+  width: 30px;
+  height: 50px;
 }
 
 h5 {
@@ -37,8 +40,76 @@ img {
   height: 280px;
 }
 
-*/ .card-body {
+.card-body {
   background-color: #e8e8e8;
+}
+
+.subscribe-area {
+  background-color: #e8e8e8;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+.pt-70 {
+  padding-top: 70px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.subscribe-text span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 5px;
+}
+.subscribe-text h2 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 0;
+  margin-top: 6px;
+}
+.subscribe-wrapper {
+  overflow: hidden;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.subscribe2-wrapper .subscribe-form input {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  height: 57px;
+  margin-right: 17px;
+  padding-left: 35px;
+  width: 70%;
+  cursor: pointer;
+}
+
+.subscribe2-wrapper .subscribe-form button {
+  background: #ff0000;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 18px 46px;
+  transition: all 0.3s ease 0s;
+}
+.subscribe2-wrapper .subscribe-form button i {
+  font-size: 18px;
+  font-weight: bolder;
+  padding-left: 5px;
 }
 
 /* footer */
@@ -59,7 +130,7 @@ footer .footer-above {
   background-color: #2c3e50;
 }
 footer .footer-col {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 footer .footer-below {
   padding: 25px 0;
@@ -76,4 +147,33 @@ h3 {
   text-align: center
   width: 100px ;
 
+} */
+
+.parrafos {
+  font-size: x-large;
+}
+.contenedor {
+  display: flex;
+  text-align: end;
+}
+
+.contenedor img {
+  width: 60px;
+  height: 100px;
+  margin-right: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* .logoo {
+  text-align: center;
+  width: 250px;
+  margin-bottom: 0px;
+} */
+
+/* .contenedor a:not(:last-child) {
+  margin-right: 200px;
+  align-items: center;
 } */
