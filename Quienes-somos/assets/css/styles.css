@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 .encabezado {
-  background-color: #ff0000;
+  background-image: url(https://img.pikbest.com/backgrounds/20200624/blue-gradient-technology-line-grid-background_2756472.jpg!c1024wm0);
   border-radius: 10%;
   padding: 20px;
-  margin-left: 25%;
-  color: white;
+  margin-left: 20%;
+  color: #ff0000;
   text-align: center;
-  width: 50vw;
+  width: 60vw;
   font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 
   display: flex;
   justify-content: center; /* Centrar horizontal */
