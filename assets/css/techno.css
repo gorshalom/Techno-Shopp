@@ -1,8 +1,26 @@
+
+/* navbar */
+.img-nav{
+  width: 150px;
+}
+.bgn-black{
+  background-color: #000000 !important;
+}
+.ico{
+  width: 35px;
+  height: 35px;
+}
+.bb-red{
+  border-bottom:2px solid red !important;
+}
+.bt-blue{
+  border-top: 2px solid blue !important ;
+}
+
+/*Inicio */
 h1{
     text-align: center;
 }
-
-
 .img-logo{
     width: 200px;
     height: 100px;
