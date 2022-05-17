@@ -18,10 +18,10 @@
 }
 
 /*Inicio */
-h1{
+.h1I{
     text-align: center;
 }
-.img-logo{
+.img-logoI{
     width: 200px;
     height: 100px;
     object-position: center;
@@ -29,13 +29,13 @@ h1{
     background-color: #000307;
 }
 
-.img-carrusel{
+.img-carruselI{
     height: calc(100vh);
     object-fit: cover;
     object-position: center;
 }
 
-.centrar{
+.centrarI{
    display: flex;
    flex-direction: column; 
    justify-content: center;
@@ -52,7 +52,7 @@ h1{
     object-position: center;
 }
 
-.imagenContenedor{
+.imagenContenedorI{
     
     background-color: white;
 }
@@ -63,21 +63,17 @@ h1{
     color: white;
 }
 
-.btn-warning .transformacion{
+.Ibtn-warning .Itransformacion{
     transform: scale(1.5);
 }
 
-
-
-.contenedor:target{
+.Icontenedor:target{
     background: rgba(0, 0, 0, 0.6);
     visibility: visible;
     opacity: 1;
 }
 
-
-
-.btn-close-popup{
+.btn-close-popupI{
     background: black;
     color: white;
     border-radius: 50%;
@@ -85,16 +81,14 @@ h1{
     padding: 1.5rem;
     border-style: none;
 }
-
-
-.cuadro{
+.cuadroI{
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
     opacity: 1;
     color: white;
     padding: 2rem;
 }
-/*CARDS*/
+/*CARDS INICIO*/
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -106,7 +100,7 @@ h1{
   margin: 100px 50px;
 }
 
-.imgC {
+.imgCI {
   width: 200px;
   height: 180px;
 }
@@ -115,11 +109,11 @@ h1{
   background-color: #E8E8E8;
 }
 
-.containerC{
+.containerCI{
 background-color: #000000;
 }
 
-/*FIN CARDS*/
+/*FIN CARDS INICIO*/
 
 .subscribe-area {
   background-color: #e8e8e8;
