@@ -5,6 +5,22 @@
 body {
   margin-left: 0;
 }
+.img-nav {
+  width: 150px;
+}
+.bgn-black {
+  background-color: #000000 !important;
+}
+.ico {
+  width: 35px;
+  height: 35px;
+}
+.bb-red {
+  border-bottom: 2px solid red !important;
+}
+.bt-blue {
+  border-top: 2px solid blue !important ;
+}
 
 .social-media {
   display: flex;
