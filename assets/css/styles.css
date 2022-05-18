@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+/* universal */
+/* *{
+  font-family: 'Lato', sans-serif;
+} */
+
 /* navbar */
 .img-nav{
   width: 150px;
+  margin-right: 100px
 }
 .bgn-black{
   background-color: #000000 !important;
@@ -17,7 +25,38 @@
 }
 
 
+/* Detalle productos */
 
+.galeria-imagenes{ 
+  max-height: 65vh; 
+  overflow-y: auto;
+  overflow-x: auto;  
+}
+
+.img-gal{
+  object-fit: contain;  
+}
+
+.img-carr-det{
+  object-fit: cover !important;
+}
+
+.carru{
+  max-height: 65vh !important;  
+}
+
+.calif{
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+/* footer */
 .subscribe-area {
     background-color: #e8e8e8;
   }
