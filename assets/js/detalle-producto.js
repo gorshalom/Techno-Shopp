@@ -4,6 +4,7 @@ $('.carousel').carousel({
 })
 
 data={
+    staus:"ok",
     datos:{
         id: 1,
         nombre: "Vengance niño",
@@ -45,8 +46,7 @@ data={
                 dislike:0,
             }
         ],
-        stock:32,
-    
+        stock:32,    
     }
 }
 

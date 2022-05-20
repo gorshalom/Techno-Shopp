@@ -11,7 +11,7 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
   <!-- css propios -->
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
   <title>index</title>
 </head>
 <body>
@@ -33,54 +33,49 @@
 
 
 
-  <!-- nav -->
+  <!-- navbar -->
   <div class="container-fluid">
-    <div class="bgn-black text-white row">      
-        <img src="assets/img/logo4.png" alt="" class="img-nav col-auto mx-auto d-block">      
-        <img src="assets/img/megusta.png" alt="" class="ico mr-2">
-        <img src="assets/img/usuario.png" alt="" class="ico mr-5">      
+    <div class="bgn-black text-white row">
+      <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
+      <a href=""><img src="../assets/img/megusta.png" alt="" class="ico mr-2"></a>
+      <a href="../templates/ingreso.html"><img src="../assets/img/usuario.png" alt="" class="ico mr-5"></a>
     </div>
-  </div> 
+  </div>
   <div class="bb-red bt-blue"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <form class="form-inline navbar-brand ">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
 
-      <form class="form-inline navbar-brand ">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      </form>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Mujeres<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Hombres<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Niñxs<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Accesorios<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-display="static"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Mas
-            </a>
-            <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Noticias</a>
-              <a class="dropdown-item" href="#">Rebajas</a>
-              <a class="dropdown-item" href="#">Nosotros</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="mujer.html">Mujeres<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="hombre.html">Hombres<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="ninxs.html">Niñxs<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="accesorios.html">Accesorios<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="noticias.html">Noticias<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
+        </li>      
+      </ul>
+    </div>
+  </nav>
+  <!-- fin navbar -->
  
 
   <section class="subscribe-area pb-50 pt-70">

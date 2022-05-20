@@ -8,7 +8,7 @@
 /* navbar */
 .img-nav{
   width: 150px;
-  margin-right: 100px
+  height: auto;  
 }
 .bgn-black{
   background-color: #000000 !important;
@@ -23,6 +23,8 @@
 .bt-blue{
   border-top: 2px solid blue !important ;
 }
+
+
 
 
 /* Detalle productos */
@@ -40,6 +42,8 @@
 .img-carr-det{
   object-fit: cover !important;
 }
+
+
 * {
   font-family: "Lato", sans-serif;
 }
@@ -218,23 +222,7 @@ ul {
   list-style-type: none;
 }
 
-/* navbar */
-.img-nav{
-  width: 100px;
-}
-.bgn-black{
-  background-color: #000000 !important;
-}
-.ico{
-  width: 35px;
-  height: 35px;
-}
-.bb-red{
-  border-bottom:2px solid red !important;
-}
-.bt-blue{
-  border-top: 2px solid blue !important ;
-}
+
 
 
 
