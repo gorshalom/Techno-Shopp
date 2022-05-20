@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+/*------------------------------------ NAVBAR---------------------------- */
+/* navbar */
+.img-nav {
+  width: 150px;
+}
+.bgn-black {
+  background-color: #000000 !important;
+}
+.ico {
+  width: 35px;
+  height: 35px;
+}
+.bb-red {
+  border-bottom: 2px solid red !important;
+}
+.bt-blue {
+  border-top: 2px solid blue !important ;
+}
+
 .encabezado {
   background-image: url(https://img.pikbest.com/backgrounds/20200624/blue-gradient-technology-line-grid-background_2756472.jpg!c1024wm0);
   border-radius: 10%;
