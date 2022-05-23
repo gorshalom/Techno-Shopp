@@ -1,0 +1,24 @@
+.img-carrito{
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+.cont-car{
+    border: none;
+    background-color: transparent;
+}
+
+.input-canti{
+    width: 60px;
+}
+
+.titulo-car{
+    font-size: large;
+    font-weight: bold;
+}
+
+/* tr{
+    border-top: 1px solid black;
+    border-bottom:  1px solid black;
+} */
