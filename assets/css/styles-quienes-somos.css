@@ -34,7 +34,29 @@
   display: flex;
   justify-content: center; /* Centrar horizontal */
   align-items: center; /* Centrar vertical */
+
+  /* Animacion */
+  animation-name: mover;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
 }
+
+/* Animacion */
+@keyframes mover {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.cartas:hover {
+  background-color: rgba(0, 0, 0, 0.361);
+  transition: background-color 2s;
+}
+
 .titulos {
   display: block;
   font-size: 1.9em;
@@ -46,6 +68,11 @@
   border-right-color: #0019fb;
   border-width: 7px;
   border-right-style: dashed;
+
+  /* Animacion */
+  animation-name: mover;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 #equipo {
   color: #0019fb;
