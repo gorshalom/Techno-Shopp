@@ -35,7 +35,18 @@
   justify-content: center; /* Centrar horizontal */
   align-items: center; /* Centrar vertical */
 }
-
+.titulos {
+  display: block;
+  font-size: 1.9em;
+  font-family: "Lato", sans-serif;
+  background-color: black;
+  width: 330px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-right-color: #0019fb;
+  border-width: 7px;
+  border-right-style: dashed;
+}
 #equipo {
   color: #0019fb;
   height: 70px;
@@ -48,10 +59,19 @@
   align-items: center; /* Centrar vertical */
   font-family: "Lato", sans-serif;
 }
+.cartas {
+  background-color: rgba(0, 0, 0, 0.126);
+  height: max-content;
+}
 
 .fuente {
   font-family: "Lato", sans-serif;
   font-size: 20px;
+}
+
+.imagen {
+  width: 70px;
+  height: 70px;
 }
 
 /* --------------------FOTTER---------------------------- */
