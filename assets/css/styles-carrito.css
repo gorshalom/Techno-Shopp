@@ -18,7 +18,16 @@
     font-weight: bold;
 }
 
+.total-car{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* tr{
     border-top: 1px solid black;
     border-bottom:  1px solid black;
 } */
+
+.sin-borde{
+    border-top: 2px solid transparent;
+}
