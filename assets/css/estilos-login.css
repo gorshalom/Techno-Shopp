@@ -1,53 +1,6 @@
-#boton1{
-    background-color: black;
-    margin-top: 15px;
-}
-#boton2{
-    background-color: white;
-    color: black;
-    border-color: black;
-    margin-top: 15px;
-}
-#icono1{
-    margin-right: 10px;
-}
-#icono2{
-    margin-right: 10px;
-}
-#h1{
-  text-align: center;
-}
-.subscribe-area {
-    background-color: #e8e8e8;
-  }
-  
-  .pb-50 {
-    padding-bottom: 50px;
-  }
-  .pt-70 {
-    padding-top: 70px;
-  }
-  
-  .mb-15 {
-    margin-bottom: 15px;
-  }
-  
-  .subscribe-text span {
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 5px;
-  }
-  .subscribe-text h2 {
-    color: #000000;
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 0;
-    margin-top: 6px;
-  }
-  .subscribe-wrapper {
-    overflow: hidden;
-  }
+#body-header{
+
+}  
   .mb-15 {
     margin-bottom: 15px;
   }
