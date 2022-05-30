@@ -1,44 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-.encabezado {
-  background-image: url(https://img.pikbest.com/backgrounds/20200624/blue-gradient-technology-line-grid-background_2756472.jpg!c1024wm0);
-  border-radius: 10%;
-  padding: 20px;
-  margin-left: 20%;
-  color: #ff0000;
-  text-align: center;
-  width: 60vw;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
+* {
+  font-family: lato, san serif;
+}
 
+.img-nav {
+  width: 150px;
+}
+.bgn-black {
+  background-color: #000000 !important;
+}
+.ico {
+  width: 35px;
+  height: 35px;
+}
+.bb-red {
+  border-bottom: 2px solid red !important;
+}
+.bt-blue {
+  border-top: 2px solid blue !important ;
+}
+
+.display-3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 125px;
+}
+
+.span {
+  display: block;
+}
+
+#cards .card {
+  border-radius: 20px;
+  min-height: 100%;
+  background-color: #d6f2fc;
+  border: solid 1px #00000059;
+}
+
+#cards img {
+  object-fit: cover;
+}
+#cards .heading-border {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+}
+
+#cards .card .user-picture img {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  background: #f8f9fa !important;
+  padding: 10px;
+}
+
+#cards .card .user-content .user-name {
+  margin-right: 150px;
+}
+
+.social {
   display: flex;
-  justify-content: center; /* Centrar horizontal */
-  align-items: center; /* Centrar vertical */
+  justify-content: space-evenly;
+  margin-top: 10px;
 }
 
-#equipo {
-  color: #0019fb;
-  height: 70px;
-  width: 500px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.194);
-  margin-left: 25%;
-  display: flex;
-  justify-content: center; /* Centrar horizontal */
-  align-items: center; /* Centrar vertical */
-  font-family: "Lato", sans-serif;
+.social a {
+  font-size: 35px;
+  color: #005c97;
+  transition: all 0.4s;
 }
 
-.fuente {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
+.social a:hover {
+  color: #fff;
 }
-
-/* --------------------FOTTER---------------------------- */
 
 .subscribe-area {
-  background-color: #0a0909;
+  background-color: #e8e8e8;
 }
 
 .pb-50 {
