@@ -10,7 +10,8 @@ body {
   margin-left: 0;
 }
 .img-nav {
-  width: 150px;
+  width: 148px;
+  margin-left: 10px;
 }
 .bgn-black {
   background-color: #000000 !important;

@@ -5,15 +5,17 @@
 }
 
 .img-nav {
-  width: 150px;
+  width: 148px;
+  margin-left: 10px;
 }
 .bgn-black {
   background-color: #000000 !important;
 }
 .ico {
-  width: 35px;
+  width: 33px;
   height: 35px;
 }
+
 .bb-red {
   border-bottom: 2px solid red !important;
 }
@@ -120,10 +122,13 @@
   font-size: 15px;
   font-weight: 300;
   height: 57px;
-  margin-right: 17px;
+  margin-right: 12px;
   padding-left: 35px;
   width: 70%;
   cursor: pointer;
+}
+.placeholder::-webkit-input-placeholder {
+  color: black;
 }
 
 .subscribe2-wrapper .subscribe-form button {

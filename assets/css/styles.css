@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
 
 /* universal */
 /* *{
@@ -6,43 +6,40 @@
 } */
 
 /* navbar */
-.img-nav{
-  width: 150px;
-  height: auto;  
+.img-nav {
+  width: 148px;
+  margin-left: 10px;
+  height: auto;
 }
-.bgn-black{
+.bgn-black {
   background-color: #000000 !important;
 }
-.ico{
+.ico {
   width: 35px;
   height: 35px;
 }
-.bb-red{
-  border-bottom:2px solid red !important;
+.bb-red {
+  border-bottom: 2px solid red !important;
 }
-.bt-blue{
+.bt-blue {
   border-top: 2px solid blue !important ;
 }
 
-
-
-
 /* Detalle productos */
 
-.galeria-imagenes{
+.galeria-imagenes {
   max-height: 65vh;
   overflow-y: auto;
   overflow-x: auto;
 }
 
-.img-gal{
+.img-gal {
   object-fit: contain;
 }
 
-.img-carr-det{
+.img-carr-det {
   object-fit: cover !important;
 }
-
 
 * {
   font-family: "Lato", sans-serif;
@@ -225,7 +222,7 @@ ul {
 /* CARDS */
 
 /* Registro*/
-.formul{
+.formul {
   border: 5px solid darkblue;
   width: 300px;
   margin: 10%;
@@ -525,11 +522,11 @@ ul {
   list-style-type: none;
 }
 
-.carru{
+.carru {
   max-height: 65vh !important;
 }
 
-.calif{
+.calif {
   font-size: 40px;
 }
 
