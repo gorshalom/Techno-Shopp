@@ -39,6 +39,18 @@ let data = {
 } 
 
 
+//localstorage
+let carrito=[];
+if(localStorage.getItem("carrito") != null){        
+    carrito = JSON.parse(localStorage.getItem("carrito"));
+    data.datos.productos=carrito;                              
+}else {           
+    data.datos.productos=[];
+    alert("No hay productos en el carrito");
+}    
+
+
+
 
 let $cuerpoCarrito= document.getElementById("cuerpoCarrito");
 let precioTotal=0;
@@ -47,11 +59,15 @@ let precioTotal=0;
 data.datos.productos.forEach(prod => {
     let templateCard = `
         <tr>
-            <td rowspan="2">
-                <img src="${prod.img}" alt="producto" class="img-carrito d-none d-sm-inline">
+            <td rowspan="2" class="d-none d-sm-block ">
+                <a href="detalle-producto.html">
+                    <img src="${prod.imagen}" alt="producto" class="img-carrito d-none d-sm-inline">
+                </a>
             </td>
             <td class="col">
-                <p class="titulo-car m-0 p-0">${prod.nombre} - ${prod.talla}</p>
+                <a href="detalle-producto.html" >
+                    <p class="titulo-car m-0 p-0 ">${prod.nombre}</p>
+                </a>
             </td>
             <td rowspan="2" class="align-items-center">
                 <p class="align-self-center titulo-car">$${prod.precio}</p>
@@ -60,7 +76,7 @@ data.datos.productos.forEach(prod => {
         <tr class="sin-borde">
             <td class="">
                 <div class="d-flex">
-                    <button class="button cont-car border-none d-inline-flex ml-0 ml-sm-5">
+                    <button class="button cont-car border-none d-inline-flex ml-0 ml-sm-5" onclick="restarProd(cantidad${prod.id})">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-dash-circle align-self-center"
                             viewBox="0 0 16 16">
@@ -70,8 +86,8 @@ data.datos.productos.forEach(prod => {
                                 d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
                         </svg>
                     </button>
-                    <input type="number" class="form-control input-canti d-inline" value="${prod.cantidad}">
-                    <button class="button cont-car border-none d-inline-flex ">
+                    <input type="number" class="form-control input-canti d-inline" value="1" id="cantidad${prod.id}">
+                    <button class="button cont-car border-none d-inline-flex " onclick="sumarProd(cantidad${prod.id})">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-plus-circle align-self-center"
                             viewBox="0 0 16 16">
@@ -82,7 +98,7 @@ data.datos.productos.forEach(prod => {
                         </svg>
                     </button>
                     <button
-                        class="button cont-car d-inline-flex ml-1 ml-sm-5 align-self-center">
+                        class="button cont-car d-inline-flex ml-5 ml-sm-5 align-self-center" onclick="borrarCarrito(${prod.id})">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                             fill="currentColor" class="bi bi-trash3-fill " viewBox="0 0 16 16">
                             <path
@@ -98,21 +114,20 @@ data.datos.productos.forEach(prod => {
 
 let templateTotal = `
 <tr>
-    <td colspan="2">
-        <p class="text-right total-car">Total</p>
-    </td>
-    <td>
-        <p class="align-self-center total-car">$${precioTotal}</p>
+    
+    <td colspan="3">
+        <p class="align-self-center total-car text-right">Total $${precioTotal}</p>
     </td>
     </tr>
     <tr>
-    <td colspan="2">
-
-    </td>
-    <td>
-        <button class="btn btn-danger">
+    
+    <td colspan="3" >
+        <div class="text-right">
+        <button class="btn btn-danger m-auto">
+            
             Continuar
         </button>
+        </div>
     </td>
 </tr>
 
@@ -121,4 +136,20 @@ let templateTotal = `
 $cuerpoCarrito.innerHTML += templateTotal;
 
 
-    
+function borrarCarrito(id){
+    let index = data.datos.productos.findIndex(prod => prod.id == id);
+    data.datos.productos.splice(index,1);
+    localStorage.setItem("carrito",JSON.stringify(data.datos.productos));
+    location.reload();
+} 
+
+function sumarProd(item){   
+    item.value++;
+}
+
+function restarProd(item){    
+    if(item.value>1){
+        item.value--;
+    }
+}
+
