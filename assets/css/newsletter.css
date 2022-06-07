@@ -345,7 +345,12 @@ ul {
 
 /* newsletter modal */
 
-.modal {
+.modal,
+.modaldos,
+.modaltres,
+.modalcuatro,
+.modalcinco,
+.modalseis {
   position: fixed;
   top: 0;
   left: 0;
@@ -398,7 +403,12 @@ ul {
   height: 150px;
 }
 
-.modal__close {
+.modal__close,
+.modal_closedos,
+.modal_closetres,
+.modal_closecuatro,
+.modal_closecinco,
+.modal_closeseis {
   text-decoration: none;
   color: #fff;
   background-color: red;
@@ -410,7 +420,12 @@ ul {
   transition: background-color 0.3s;
 }
 
-.modal__close:hover {
+.modal__close:hover,
+.modal__closedos:hover,
+.modal__closetres:hover,
+.modal__closecuatro:hover,
+.modal__closecinco:hover,
+.modal__closeseis:hover {
   color: #f26250;
   background-color: #fff;
 }
