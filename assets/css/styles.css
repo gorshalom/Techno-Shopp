@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
 
 /* universal */
 /* *{
@@ -6,46 +6,51 @@
 } */
 
 /* navbar */
-.img-nav{
-  width: 150px;
-  height: auto;  
+
+.img-nav {
+  width: 148px;
+  margin-left: 10px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-.bgn-black{
+.bgn-black {
   background-color: #000000 !important;
 }
-.ico{
+.ico {
   width: 35px;
   height: 35px;
 }
-.bb-red{
-  border-bottom:2px solid red !important;
+.bb-red {
+  border-bottom: 2px solid red !important;
 }
-.bt-blue{
+.bt-blue {
   border-top: 2px solid blue !important ;
 }
 
-
-
-
 /* Detalle productos */
 
-.galeria-imagenes{
+.galeria-imagenes {
   max-height: 65vh;
   overflow-y: auto;
   overflow-x: auto;
 }
 
-.img-gal{
+.img-gal {
   object-fit: contain;
 }
 
-.img-carr-det{
+.img-carr-det {
   object-fit: cover !important;
 }
 
-
 * {
   font-family: "Lato", sans-serif;
+}
+.carousel-item {
+  height: calc(76vh);
+  /* position: absolute; */
+  top: 75%;
 }
 
 /* h5 {
@@ -203,6 +208,9 @@ h3 {
   width: 100px ;
 
 } */
+.parrafoss {
+  font-size: larger;
+}
 
 .parrafos {
   font-size: x-large;
@@ -225,7 +233,7 @@ ul {
 /* CARDS */
 
 /* Registro*/
-.formul{
+.formul {
   border: 5px solid darkblue;
   width: 300px;
   margin: 10%;
@@ -292,6 +300,7 @@ ul {
   left: 21px;
   right: auto;
 }
+
 .product-grid .product-content {
   padding: 12px;
 }
@@ -525,11 +534,11 @@ ul {
   list-style-type: none;
 }
 
-.carru{
+.carru {
   max-height: 65vh !important;
 }
 
-.calif{
+.calif {
   font-size: 40px;
 }
 
@@ -656,3 +665,117 @@ h3 {
 ul {
   list-style-type: none;
 }
+
+/* LOADER 2 */
+body {
+  background-color: black;
+}
+
+#loader {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%) translateZ(0);
+  top: 50%;
+  width: 170px;
+  height: 170px;
+  z-index: 1;
+  background: url("../img/logo1-removebg-preview.png") center no-repeat;
+  background-size: contain;
+  animation: spinning 1.5s infinite ease-in-out;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  margin: -15px;
+  box-shadow: 0 4px 0 0 #fff;
+  transition: all 1s linear;
+  animation: lds-eclipse 1s linear infinite;
+}
+
+@keyframes spinning {
+  0% {
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1) translateZ(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+  }
+}
+
+@keyframes lds-eclipse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+/* LOADER 2 */
+/* 
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+-webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+/* .animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}  */
+/* LOADER */

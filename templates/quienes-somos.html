@@ -13,296 +13,321 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/styles-quienes-somos.css">
-  <title>Document</title>
+  <title>Noticias</title>
+  <link rel="icon" href="../assets/img/logo-ts.png">
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
 
-  <!-- navbar -->
-  <div class="container-fluid">
-    <div class="bgn-black text-white row">
-      <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
-      <a href="#" class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
-          class="bi bi-suit-heart-fill " viewBox="0 0 16 16">
-          <path
-            d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
-        </svg></a>
-      <a href="carrito.html" class="d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart-fill mx-2 mx-sm-4"
-          viewBox="0 0 16 16">
-          <path
-            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-        </svg>
-      </a>
-      <a href="../templates/ingreso.html" class="d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle mr-4"
-          viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-          <path fill-rule="evenodd"
-            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-        </svg>
-      </a>
+
+    <!-- navbar -->
+    <div class="container-fluid">
+      <div class="bgn-black text-white row">
+        <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
+
+        <a href="busqueda.html?search=favoritos" class="d-flex align-items-center"><svg
+            xmlns="http://www.w3.org/2000/svg" width="25" height="40" fill="white" class="bi bi-suit-heart-fill "
+            viewBox="0 0 16 16">
+            <path
+              d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+          </svg></a>
+        <a href="carrito.html" class="d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="40" fill="white"
+            class="bi bi-cart-fill mx-2 mx-sm-4" viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+        </a>
+        <a href="../templates/ingreso.html" class="d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="35" fill="white"
+            class="bi bi-person-circle mr-4 path" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="bb-red bt-blue"></div>
-  <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="bb-red bt-blue"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <form class="form-inline navbar-brand ">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    </form>
+      <form style="margin-top: 5px; margin-bottom: 5px;" class="form-inline navbar-brand ">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html">Mujeres<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html">Hombres<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html">Niñxs<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html">Accesorios<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- fin navbar -->
-  <main>
-    <!-- Ui cards -->
-    <section id="cards">
-      <div class="container py-2">
-        <div class="row pb-4 ">
-          <div class="col-12 text-center">
-            <div class="display-3">¿Quienes somos?</div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Mujer">Mujeres<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Hombre">Hombres<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Niñx">Niñxs<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Accesorio">Accesorios<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin navbar -->
+    <main>
+      <!-- Ui cards -->
+      <section id="cards">
+        <div class="container py-2">
+          <div class="row pb-4 ">
+            <div class="col-12 text-center">
+              <div class="display-3">¿Quienes somos?</div>
+            </div>
           </div>
-        </div>
 
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <div class="user-picture">
+                    <img src="../assets/img/quienes-somos/LOG3.jpg" class="shadow-sm rounded-circle" height="153"
+                      width="153" />
+                  </div>
+                  <div class="user-content">
+                    <h5 style="font-size: 24px; font-weight: 800;" class="text-capitalize user-name">Full Snackers</h5>
+                    <span style="font-size: 24px; font-weight: 700;" class="span text-center">Visión</span>
+                    <p class=" text-align: justify;">En Techno-Shopp tenemos el propósito de acompañar a la comunidad de
+                      developers
+                      a expresar su gusto
+                      por la tecnología de
+                      una manera creativa e innovadora.
+                      En Techno-Shopp tenemos el propósito de acompañar a la comunidad de developers a expresar su gusto
+                      por la tecnología de
+                      una manera creativa e innovadora.
+                    </p>
+
+                    <span style="font-size: 24px;font-weight: 700" class="span text-center"> Misión</span>
+
+                    <p class=" text-align: justify;">Proveer prendas significativas que contengan imágenes relacionadas
+                      con
+                      tecnología, cumpliendo con
+                      los requerimientos
+                      previamente convenidos con los clientes.
+
+                      Proteger y maximizar el patrimonio de los accionistas y el valor de las unidades de negocio de
+                      Techno-Shopp.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="container py-2">
+              <div class="row pb-4">
+                <div class="col-12 text-center">
+                  <div class="display-3">Nuestro equipo</div>
+                </div>
+              </div>
+              <!-- cards -->
+              <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 pt-5">
+                  <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                      <div class="user-picture">
+                        <img src="../assets/img/quienes-somos/Luis.jpg" class="shadow-sm rounded-circle" height="130"
+                          width="130" />
+                      </div>
+                      <div class="user-content">
+                        <h5 style="font-weight: 600;" class="text-capitalize user-name">Luis García</h5>
+                        <p class=" text-capitalize text-muted small blockquote-footer">Java Fullstack Developer Jr</p>
+                        <p class="small text-muted mb-0">Soy un joven developer. Desde inicios de 2022 he estado tomando
+                          muchos cursos de programación para expandir mi
+                          conocimiento. He estado tomando algunos bootcamps sobre desarrollo web y Soft Skills. Entre
+                          mis
+                          hobbies se encuentran
+                          ver series, jugar videojuegos, ver canales de YouTube sobre comida, aventura y programar y
+                          aprender un poco cada día. Mi
+                          meta en el futuro es poder llegar a trabajar en una Big Tech.</p>
+                      </div>
+                      <div class="social">
+                        <a target="_blank" href="https://github.com/luisthedataguy" class="fab fa-linkedin"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/luis-manuel-gg/" class="fab fa-github"></a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 pt-5">
+                  <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                      <div class="user-picture">
+                        <img src="../assets/img/quienes-somos/Vivi.jpg" class="shadow-sm rounded-circle" height="130"
+                          width="130" />
+                      </div>
+                      <div class="user-content">
+                        <h5 style="font-weight: 600;" class="text-capitalize user-name">Viviana Juarez</h5>
+                        <p class=" text-capitalize text-muted small blockquote-footer">Java Fullstack Developer Jr</p>
+                        <p class="small text-muted mb-0">Licenciada en Computación Desarrolladora Java FullStack Jr
+                          Me gusta salir a caminar con amig@s y comer. Busco aprender
+                          cada vez más cosas nuevas y capacitarme para ser mejor cada
+                          día. Confío y creo en el destino y por algo estamos aquí. <br><br><br></p>
+                      </div>
+                      <div class="social">
+                        <a target="_blank" href="https://www.linkedin.com/in/viviana-juarez-fuentes/"
+                          class="fab fa-linkedin"></a>
+                        <a target="_blank" href="https://github.com/viiviijf18" class="fab fa-github"></a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 pt-5">
+                  <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                      <div class="user-picture">
+                        <img src="../assets/img/quienes-somos/katia.jpg" class="shadow-sm rounded-circle" height="130"
+                          width="130" />
+                      </div>
+                      <div class="user-content">
+                        <h5 style="font-weight: 600;" class="text-capitalize user-name">Katia Alvarez</h5>
+                        <p class=" text-capitalize text-muted small blockquote-footer">Java Fullstack Developer Jr</p>
+                        <p class="small text-muted mb-0">Me gusta proponerme retos personales, siento que una de las
+                          mejores sensaciones de satisfacción es cuando logras tus
+                          objetivos. No me da miedo renunciar a lo que no me hace
+                          feliz, sin embargo soy persistente con mis metas. Soy una
+                          desarrolladora Java Full Stack, concluí una Licenciatura en
+                          Informática. Egresada de la Faculta de Estudios Superiores
+                          Cuautitlán UMAN. Me gusta bailar, ver peliculas y comer</p>
+                      </div>
+                      <div class="social">
+                        <a target="_blank" href="https://www.linkedin.com/in/kalvarezr7/" class="fab fa-linkedin"></a>
+                        <a target="_blank" href="https://github.com/Kalvarezr1" class="fab fa-github"></a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 pt-5">
+                  <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                      <div class="user-picture">
+                        <img src="../assets/img/quienes-somos/jose.jpg" class="shadow-sm rounded-circle" height="130"
+                          width="130" />
+                      </div>
+                      <div class="user-content">
+                        <h5 style="font-weight: 600;" class="text-capitalize user-name">Jose Becerra</h5>
+                        <p class=" text-capitalize text-muted small blockquote-footer">Java Fullstack Developer Jr</p>
+                        <p class="small text-muted mb-0">Soy egresado ingeniería en informática en UPIICSA(IPN), soy
+                          apasionado por el desarrollo y DevOps, soy autodidacta, con
+                          experiencia en desarrollo de
+                          aplicaciones web y móviles, testing y puesta en producción <br><br><br></p>
+                      </div>
+                      <div class="social">
+                        <a href="https://www.linkedin.com/in/jose-becerra-arg/" class="fab fa-linkedin"></a>
+                        <a href="https://github.com/gorshalom" class="fab fa-github"></a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- /cards -->
+      </section>
+      <!-- /Ui cards -->
+    </main>
+
+    <!--SECCIÓN DE SUSCRIBIRSE-->
+    <section class="subscribe-area pb-50 pt-70">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="card shadow-sm border-0">
-              <div class="card-body">
-                <div class="user-picture">
-                  <img src="../assets/img/quienes-somos/LOG3.jpg" class="shadow-sm rounded-circle" height="153"
-                    width="153" />
-                </div>
-                <div class="user-content">
-                  <h5 style="font-size: 24px; font-weight: 800;" class="text-capitalize user-name">Full Snackers</h5>
-                  <span style="font-size: 24px; font-weight: 700;" class="span text-center">Visión</span>
-                  <p class=" text-align: justify;">En Techno-Shopp tenemos el propósito de acompañar a la comunidad de
-                    developers
-                    a expresar su gusto
-                    por la tecnología de
-                    una manera creativa e innovadora.
-                    En Techno-Shopp tenemos el propósito de acompañar a la comunidad de developers a expresar su gusto
-                    por la tecnología de
-                    una manera creativa e innovadora.
-                  </p>
 
-                  <span style="font-size: 24px;font-weight: 700" class="span text-center"> Misión</span>
-
-                  <p class=" text-align: justify;">Proveer prendas significativas que contengan imágenes relacionadas
-                    con
-                    tecnología, cumpliendo con
-                    los requerimientos
-                    previamente convenidos con los clientes.
-
-                    Proteger y maximizar el patrimonio de los accionistas y el valor de las unidades de negocio de
-                    Techno-Shopp.
-                  </p>
-                </div>
+          <div class="col-md-4">
+            <div class="subscribe-text mb-15">
+              <h2>SUBSCRÍBETE Y ENTÉRATE <br> DE LAS NOVEDADES</h2>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+              <div class="subscribe-form">
+                <form action="#">
+                  <input class="placeholder" placeholder="tu@correo.com" type="email">
+                  <button>SUSCRIBIRSE</button>
+                </form>
               </div>
             </div>
           </div>
+        </div>
 
-
-
-
-
-          <div class="container py-2">
-            <div class="row pb-4">
-              <div class="col-12 text-center">
-                <div class="display-3">Nuestro equipo</div>
-              </div>
-            </div>
-            <!-- cards -->
-            <div class="row">
-              <div class="col-lg-6 col-md-12 mb-4 pt-5">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <div class="user-picture">
-                      <img src="../assets/img/quienes-somos/Luis.jpg" class="shadow-sm rounded-circle" height="130"
-                        width="130" />
-                    </div>
-                    <div class="user-content">
-                      <h5 style="font-weight: 600;" class="text-capitalize user-name">Luis García</h5>
-                      <p class=" text-capitalize text-muted small blockquote-footer">Java Fullstack Developer Jr</p>
-                      <p class="small text-muted mb-0">Soy un joven developer. Desde inicios de 2022 he estado tomando
-                        muchos cursos de programación para expandir mi
-                        conocimiento. He estado tomando algunos bootcamps sobre desarrollo web y Soft Skills. Entre mis
-                        hobbies se encuentran
-                        ver series, jugar videojuegos, ver canales de YouTube sobre comida, aventura y programar y
-                        aprender un poco cada día. Mi
-                        meta en el futuro es poder llegar a trabajar en una Big Tech.</p>
-                    </div>
-                    <div class="social">
-                      <a href="" class="fab fa-linkedin"></a>
-                      <a href="" class="fab fa-github"></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mb-4 pt-5">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <div class="user-picture">
-                      <img src="../assets/img/quienes-somos/Vivi.jpg" class="shadow-sm rounded-circle" height="130"
-                        width="130" />
-                    </div>
-                    <div class="user-content">
-                      <h5 style="font-weight: 600;" class="text-capitalize user-name">Viviana Juarez</h5>
-                      <p class=" text-capitalize text-muted small blockquote-footer">Java Fullstack Developer Jr</p>
-                      <p class="small text-muted mb-0">Licenciada en Computación Desarrolladora Java FullStack Jr
-                        Me gusta salir a caminar con amig@s y comer. Busco aprender
-                        cada vez más cosas nuevas y capacitarme para ser mejor cada
-                        día. Confío y creo en el destino y por algo estamos aquí.</p>
-                    </div>
-                    <div class="social">
-                      <a href="" class="fab fa-linkedin"></a>
-                      <a href="" class="fab fa-github"></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mb-4 pt-5">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <div class="user-picture">
-                      <img src="../assets/img/quienes-somos/katia.jpg" class="shadow-sm rounded-circle" height="130"
-                        width="130" />
-                    </div>
-                    <div class="user-content">
-                      <h5 style="font-weight: 600;" class="text-capitalize user-name">Katia Alvarez</h5>
-                      <p class=" text-capitalize text-muted small blockquote-footer">Java Fullstack Developer Jr</p>
-                      <p class="small text-muted mb-0">Me gusta proponerme retos personales, siento que una de las
-                        mejores sensaciones de satisfacción es cuando logras tus
-                        objetivos. No me da miedo renunciar a lo que no me hace
-                        feliz, sin embargo soy persistente con mis metas. Soy una
-                        desarrolladora Java Full Stack, concluí una Licenciatura en
-                        Informática. Egresada de la Faculta de Estudios Superiores
-                        Cuautitlán UMAN. Me gusta bailar, ver peliculas y comer</p>
-                    </div>
-                    <div class="social">
-                      <a href="" class="fab fa-linkedin"></a>
-                      <a href="" class="fab fa-github"></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mb-4 pt-5">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <div class="user-picture">
-                      <img src="../assets/img/quienes-somos/jose.jpg" class="shadow-sm rounded-circle" height="130"
-                        width="130" />
-                    </div>
-                    <div class="user-content">
-                      <h5 style="font-weight: 600;" class="text-capitalize user-name">Jose Becerra</h5>
-                      <p class=" text-capitalize text-muted small blockquote-footer">Java Fullstack Developer Jr</p>
-                      <p class="small text-muted mb-0">Soy egresado ingeniería en informática en UPIICSA(IPN), soy
-                        apasionado por el desarrollo y DevOps, soy autodidacta, con
-                        experiencia en desarrollo de
-                        aplicaciones web y móviles, testing y puesta en producción</p>
-                    </div>
-                    <div class="social">
-                      <a href="" class="fab fa-linkedin"></a>
-                      <a href="" class="fab fa-github"></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <!-- /cards -->
+      </div>
     </section>
-    <!-- /Ui cards -->
-  </main>
 
-  <!--SECCIÓN DE SUSCRIBIRSE-->
-  <section class="subscribe-area pb-50 pt-70">
-    <div class="container">
-      <div class="row">
 
-        <div class="col-md-4">
-          <div class="subscribe-text mb-15">
-            <h2>SUBSCRÍBETE Y ENTÉRATE <br> DE LAS NOVEDADES</h2>
+    <!----------FOOTER---------->
+    <footer class=" footer-style">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <h3>COMPRAS</h3>
+            <p class="parrafos">
+              Cambio y devoluciones
+            </p>
+            <P class="parrafos">Información de Envio</P>
+            <p class="parrafos">Formas de pago</p>
           </div>
-        </div>
-        <div class="col-md-8">
-          <div class="subscribe-wrapper subscribe2-wrapper mb-15">
-            <div class="subscribe-form">
-              <form action="#">
-                <input placeholder="tu@correo.com" type="email">
-                <button>SUSCRIBIRSE</button>
-              </form>
-            </div>
+          <div class="col-md-4 footer-col">
+          </div>
+          <div class="col-md-4 footer-col">
+            <h3>CONTACTO</h3>
+            <p class="parrafoss"><a target="_blank" href="mailto:contacto@techno.com.mx">contacto@techno.com.mx</a></p>
+
+            <p class="parrafos"> 5543546799</p>
           </div>
         </div>
       </div>
 
-    </div>
-  </section>
 
-
-  <!----------FOOTER---------->
-
-  <footer class=" footer-style">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col">
-          <h3>COMPRAS</h3>
-          <p class="parrafos">
-            Cambio y devoluciones
-          </p>
-          <P class="parrafos">Información de Envio</P>
-          <p class="parrafos">Formas de pago</p>
-        </div>
-        <div class="col-md-4 footer-col">
-          <h3>CONTACTO</h3>
-          <p class="parrafos"><a target="_blank" href="mailto:contacto@techno.com.mx">contacto@techno.com.mx</a></p>
-
-          <p class="parrafos"> 5543546799</p>
-          <br><br><br><br><br><br>
-        </div>
-        <div class="col-md-4 footer-col">
-          
-          <h5 style="text-align: center;">MÉTODOS DE PAGO</h5>
-        </div>
+      <div class="container">
+        <img src="../assets/img/logo1.png" alt="Logotipo" style="width: 200px;height: 250px; margin-right: 100px;"
+          class="mx-auto d-block">
       </div>
-    </div>
+    </footer>
+  </div>
 
-    <div class="container">
-      <img src="assets/img/logo1.png" alt="Logotipo" style="width:250px; margin-right: 100px;" class="mx-auto d-block">
-    </div>
-  </footer>
 
+
+  <script>
+    function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+      document.getElementById("myDiv").style.background = "white";
+      document.getElementById("myDiv").style.textAlign = "initial ";
+
+    }
+
+
+
+  </script>
 </body>
 
 </html>
