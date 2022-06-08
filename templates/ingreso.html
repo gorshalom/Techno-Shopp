@@ -14,165 +14,191 @@
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
 
-  <!-- navbar -->
-  <div class="container-fluid">
-    <div class="bgn-black text-white row">
-      <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
-      <a href="busqueda.html?search=favoritos" class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="30"
-          fill="white" class="bi bi-suit-heart-fill " viewBox="0 0 16 16">
-          <path
-            d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
-        </svg></a>
-      <a href="carrito.html" class="d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-cart-fill mx-2 mx-sm-4"
-          viewBox="0 0 16 16">
-          <path
-            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-        </svg>
-      </a>
-      <a href="../templates/ingreso.html" class="d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-person-circle mr-4"
-          viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-          <path fill-rule="evenodd"
-            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-        </svg>
-      </a>
+
+
+
+    <!-- navbar -->
+    <div class="container-fluid">
+      <div class="bgn-black text-white row">
+        <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
+
+        <a href="busqueda.html?search=favoritos" class="d-flex align-items-center"><svg
+            xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-suit-heart-fill "
+            viewBox="0 0 16 16">
+            <path
+              d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+          </svg></a>
+        <a href="carrito.html" class="d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white"
+            class="bi bi-cart-fill mx-2 mx-sm-4" viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+        </a>
+        <a href="../templates/ingreso.html" class="d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-person-circle mr-4"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="bb-red bt-blue"></div>
-  <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="bb-red bt-blue"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <form class="form-inline navbar-brand ">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    </form>
+      <form style="margin-top: 5px; margin-bottom: 5px;" class="form-inline navbar-brand ">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Mujer">Mujeres<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Hombre">Hombres<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Niñx">Niñxs<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Accesorio">Accesorios<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- fin navbar -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Mujer">Mujeres<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Hombre">Hombres<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Niñx">Niñxs<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Accesorio">Accesorios<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin navbar -->
 
 
-  <!-- main -->
-  <div class="container my-5">
-    <div class="row no-gutters bg-dark text-white rounded-lg">
-      <div class="col-md p-5">
-        <h2 class="mb-4">Inicio de sesión</h2>
-        <div class="btn-group">
-          <button class="btn btn-outline-dark text-white mr-2 mb-3 rounded-lg"><i
-              class="fa-brands text-danger fa-google mr-3"></i>Google</button>
-          <button class="btn btn-outline-dark text-white mb-3 rounded-lg"><i
-              class="fa-brands fa-facebook mr-3 text-danger"></i>Facebook</button>
-        </div>
-        <form>
-          <div class="form-group">
-            <label for="email">Correo electrónico <span style="color: red;">*</span></label>
-            <input type="email" class="form-control" id="email" name="email"
-              placeholder="Ingresa tu correo electrónico">
-            <p class="msj-error" id="errorEmail"></p>
+    <!-- main -->
+    <div class="container my-5">
+      <div class="row no-gutters bg-dark text-white rounded-lg">
+        <div class="col-md p-5">
+          <h2 class="mb-4">Inicio de sesión</h2>
+          <div class="btn-group">
+            <button class="btn btn-outline-dark text-white mr-2 mb-3 rounded-lg"><i
+                class="fa-brands text-danger fa-google mr-3"></i>Google</button>
+            <button class="btn btn-outline-dark text-white mb-3 rounded-lg"><i
+                class="fa-brands fa-facebook mr-3 text-danger"></i>Facebook</button>
           </div>
-          <div class="form-group">
-            <label for="password">Contraseña <span style="color: red;">*</span></label>
-            <input type="password" class="form-control" id="password" name="password"
-              placeholder="Ingresa una contraseña">
-            <p class="msj-error" id="errorPassword"></p>
-          </div>
-
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input btn-check-red" checked name="terminos" type="checkbox" id="terminos">
-              <label class="form-check-label" for="terminos">
-                Mantener la sesión iniciada
-              </label>
+          <form>
+            <div class="form-group">
+              <label for="email">Correo electrónico <span style="color: red;">*</span></label>
+              <input type="email" class="form-control" id="email" name="email"
+                placeholder="Ingresa tu correo electrónico">
+              <p class="msj-error" id="errorEmail"></p>
             </div>
-          </div>
-          <div class="row">
-            <a href="registro.html" style="color: aqua;">¿No tienes cuenta aun?</a>
-          </div>
+            <div class="form-group">
+              <label for="password">Contraseña <span style="color: red;">*</span></label>
+              <input type="password" class="form-control" id="password" name="password"
+                placeholder="Ingresa una contraseña">
+              <p class="msj-error" id="errorPassword"></p>
+            </div>
 
-          <div class="text-right">
-            <button type=submit" class="mt-3 btn btn-danger rounded-pill pr-5 pl-5 ">Regístrate</button>
-          </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input btn-check-red" checked name="terminos" type="checkbox" id="terminos">
+                <label class="form-check-label" for="terminos">
+                  Mantener la sesión iniciada
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <a href="registro.html" style="color: aqua;">¿No tienes cuenta aun?</a>
+            </div>
 
-        </form>
+            <div class="text-right">
+              <button type=submit" class="mt-3 btn btn-danger rounded-pill pr-5 pl-5 ">Regístrate</button>
+            </div>
+
+          </form>
+        </div>
       </div>
     </div>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+
+    <!--ICONOS-->
+    <script src="https://kit.fontawesome.com/790443b1d9.js" crossorigin="anonymous"></script>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- fin main -->
+
+    <!-- footer -->
+    <footer class=" footer-style">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <h3>COMPRAS</h3>
+            <p class="parrafos">
+              Cambio y devoluciones
+            </p>
+            <P class="parrafos">Información de Envio</P>
+            <p class="parrafos">Formas de pago</p>
+          </div>
+          <div class="col-md-4 footer-col">
+          </div>
+          <div class="col-md-4 footer-col">
+            <h3>CONTACTO</h3>
+            <p class="parrafoss"><a target="_blank" href="mailto:contacto@techno.com.mx">contacto@techno.com.mx</a></p>
+
+            <p class="parrafos"> 5543546799</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <img src="../assets/img/logo1.png" alt="Logotipo" style="width: 200px;height: 250px; margin-right: 100px;"
+          class="mx-auto d-block">
+      </div>
+    </footer>
   </div>
-
-
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-    crossorigin="anonymous"></script>
-
-  <!--ICONOS-->
-  <script src="https://kit.fontawesome.com/790443b1d9.js" crossorigin="anonymous"></script>
-
-  <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
-
-  <!-- fin main -->
-
-  <!-- footer -->
-  <footer class=" footer-style">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col">
-          <h3>COMPRAS</h3>
-          <p class="parrafos">
-            Cambio y devoluciones
-          </p>
-          <P class="parrafos">Información de Envio</P>
-          <p class="parrafos">Formas de pago</p>
-        </div>
-        <div class="col-md-4 footer-col">
-        </div>
-        <div class="col-md-4 footer-col">
-          <h3>CONTACTO</h3>
-          <p class="parrafoss"><a target="_blank" href="mailto:contacto@techno.com.mx">contacto@techno.com.mx</a></p>
-
-          <p class="parrafos"> 5543546799</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <img src="../assets/img/logo1.png" alt="Logotipo" style="width: 200px;height: 250px; margin-right: 100px;"
-        class="mx-auto d-block">
-    </div>
-  </footer>
   <!-- fin footer -->
+
+
+  <script>
+    function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+      document.getElementById("myDiv").style.background = "white";
+      document.getElementById("myDiv").style.textAlign = "initial ";
+
+    }
+
+
+
+  </script>
 
 </body>
 

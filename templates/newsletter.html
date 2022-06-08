@@ -23,325 +23,357 @@
   <title>Newsletter</title>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
 
-  <!-- navbar -->
-  <div class="container-fluid">
-    <div class="bgn-black text-white row">
-      <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
-
-      <a href="busqueda.html?search=favoritos" class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg"
-          width="25" height="30" fill="white" class="bi bi-suit-heart-fill " viewBox="0 0 16 16">
-          <path
-            d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
-        </svg></a>
-      <a href="carrito.html" class="d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-cart-fill mx-2 mx-sm-4"
-          viewBox="0 0 16 16">
-          <path
-            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-        </svg>
-      </a>
-      <a href="../templates/ingreso.html" class="d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-person-circle mr-4"
-          viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-          <path fill-rule="evenodd"
-            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-        </svg>
-      </a>
-    </div>
-  </div>
-  <div class="bb-red bt-blue"></div>
-  <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <form class="form-inline navbar-brand ">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    </form>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Mujer">Mujeres<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Hombre">Hombres<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Niñx">Niñxs<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Accesorio">Accesorios<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- fin navbar -->
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../assets/img/news.png" class="d-block w-100 h-100" alt="...">
+
+
+
+    <!-- navbar -->
+    <div class="container-fluid">
+      <div class="bgn-black text-white row">
+        <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
+
+        <a href="busqueda.html?search=favoritos" class="d-flex align-items-center"><svg
+            xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-suit-heart-fill "
+            viewBox="0 0 16 16">
+            <path
+              d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+          </svg></a>
+        <a href="carrito.html" class="d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white"
+            class="bi bi-cart-fill mx-2 mx-sm-4" viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+        </a>
+        <a href="../templates/ingreso.html" class="d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-person-circle mr-4"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+          </svg>
+        </a>
       </div>
     </div>
-  </div>
+    <div class="bb-red bt-blue"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="content-wrapper">
+      <form style="margin-top: 5px; margin-bottom: 5px;" class="form-inline navbar-brand ">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
 
-    <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
-      <img src="https://www.remedi.org.mx/images/cemudi/formas-pago.png" alt="" class="news-card__image">
-      <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Nuevas formas de pago</h2>
-        <div class="news-card__post-date">23 de mayo, 2022</div>
-        <div class="news-card__details-wrapper">
-          <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
-            tempore
-            repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-          <a href="#" class="news-card__read-more">Read more<i class="fas fa-long-arrow-alt-right"></i></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link siete" href="busqueda.html?search=Mujer">Mujeres<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Hombre">Hombres<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Niñx">Niñxs<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Accesorio">Accesorios<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin navbar -->
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video class="d-block w-100 img-carruselI" src="../assets/img/video (7) (online-video-cutter.com) (1).mp4"
+            alt="Third slide" autoplay muted loop>
+          </video>
+          <!-- <img src="../assets/img/video (7).mp4" class="d-block w-100 h-100" alt="..."> -->
         </div>
       </div>
     </div>
 
-    <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
-      <img
-        src="https://m.media-amazon.com/images/I/B1i3u9-Q-KS._CLa%7C2140%2C2000%7CB10SSzW14NS.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX342_.png"
-        alt="" class="news-card__image">
-      <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Nuevos modelos de sudaderas</h2>
-        <div class="news-card__post-date">23 de mayo, 2022</div>
-        <div class="news-card__details-wrapper">
-          <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex
-            natus
-            nulla rem sequi laborum quod fugit&hellip;</p>
-          <a href="#" class="news-card__read-more dos">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-    </div>
+    <div class="content-wrapper">
 
-    <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
-      <img src="https://i.ytimg.com/vi/nPHrIcnlTWo/maxresdefault.jpg" alt="" class="news-card__image">
-      <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">La calidad de nuestro productos</h2>
-        <div class="news-card__post-date">23 de mayo, 2022</div>
-        <div class="news-card__details-wrapper">
-          <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;
-          </p>
-          <a href="#" class="news-card__read-more tres">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
-      <img
-        src="https://www.knowband.com/blog/wp-content/uploads/2019/09/How-eCommerce-Mobile-Apps-enhance-Customer-Loyalty-750x300.png"
-        alt="" class="news-card__image">
-      <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Proximamente nuestro app movil :)</h2>
-        <div class="news-card__post-date">23 de mayo, 2022</div>
-        <div class="news-card__details-wrapper">
-          <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos rerum
-            eligendi at eum delectus ab necessitatibus repellat.</p>
-          <a href="#" class="news-card__read-more cuatro">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
-      <img src="https://centribal.com/wp-content/uploads/2020/09/5-indicadores-satisfaccio%CC%81n-cliente-copia.png"
-        alt="" class="news-card__image">
-      <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Satisifacción del cliente</h2>
-        <div class="news-card__post-date">Jan 29, 2018</div>
-        <div class="news-card__details-wrapper">
-          <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
-            tempore
-            repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
-          <a href="#" class="news-card__read-more cinco">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
-      <img
-        src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1529574610/content-items/002/397/632/foodmarket-original.png?1529574610"
-        alt="" class="news-card__image">
-      <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Mejorarmos nuestra UX</h2>
-        <div class="news-card__post-date">Jan 29, 2018</div>
-        <div class="news-card__details-wrapper">
-          <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
-            tempore
-            repellat? Ullam sed officia.</p>
-          <a href="#" class="news-card__read-more seis">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <section class="subscribe-area pb-50 pt-70">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-4">
-          <div class="subscribe-text mb-15">
-            <h2>SUBSCRÍBETE Y ENTÉRATE <br> DE LAS NOVEDADES</h2>
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://www.remedi.org.mx/images/cemudi/formas-pago.png" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Nuevas formas de pago</h2>
+          <div class="news-card__post-date">23 de mayo, 2022</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Gracias por la confianza. Por tí llegan a TechnoShop nuevas formas de pago.
+            </p>
+            <a href="#" class="news-card__read-more">Leer más<i class="fas fa-long-arrow-alt-right"></i></a>
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="subscribe-wrapper subscribe2-wrapper mb-15">
-            <div class="subscribe-form">
-              <form action="#">
-                <input placeholder="tu@correo.com" type="email">
-                <button>SUSCRIRSE</button>
-              </form>
+      </div>
+
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="../assets/img/mujerdesc.PNG" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">40% de descuento en sección de mujeres</h2>
+          <div class="news-card__post-date">07 de junio, 2022</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Para apaoyo a tu bolsillo ponemos a disposición toda la sección de mujeres al
+              40% de descuento.</p>
+            <a href="#" class="news-card__read-more dos">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://i.ytimg.com/vi/nPHrIcnlTWo/maxresdefault.jpg" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">La calidad de nuestro productos</h2>
+          <div class="news-card__post-date">06 de junio, 2022</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">No mentimos, nuestros productos son provados contra desgastes contra los de la
+              competencía. La
+              calidad que ofrecemos es unica.
+            </p>
+            <a href="#" class="news-card__read-more tres">Leer más<i class="fas fa-long-arrow-alt-right"></i></a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="../assets/img/blancopython.PNG" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Nuevo modelo blanco de Python</h2>
+          <div class="news-card__post-date">08 de junio, 2022</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">La gran solicitada playera de Python llego para quedarse con su nuevo color
+              blanco.</p>
+            <a href="#" class="news-card__read-more cuatro">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://centribal.com/wp-content/uploads/2020/09/5-indicadores-satisfaccio%CC%81n-cliente-copia.png"
+          alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Satisfacción del cliente</h2>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
+              tempore
+              repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
+            <a href="#" class="news-card__read-more cinco">Leer más<i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img
+          src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1529574610/content-items/002/397/632/foodmarket-original.png?1529574610"
+          alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Mejorarmos nuestra UX</h2>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
+              tempore
+              repellat? Ullam sed officia.</p>
+            <a href="#" class="news-card__read-more seis">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="subscribe-area pb-50 pt-70">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="subscribe-text mb-15">
+              <h2>SUBSCRÍBETE Y ENTÉRATE <br> DE LAS NOVEDADES</h2>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+              <div class="subscribe-form">
+                <form action="#">
+                  <input placeholder="tu@correo.com" type="email">
+                  <button>SUSCRIRSE</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
+
+      </div>
+    </section>
+
+
+    <section class="modal">
+      <div class="modal__container">
+        <img src="https://www.remedi.org.mx/images/cemudi/formas-pago.png" class="modal__img">
+
+        <h2 class="modal__title">¡Nuevas formas de pago!</h2>
+        <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la expansión de nuestra marca, ya
+          tenemos pago con tarjeta de
+          crédito y
+          débito.<br>
+          Consulta los terminos y condiciones y las tarjetas participantes.<br>
+        </p>
+        <a href="#" class="modal__close">Cerrar</a>
+      </div>
+    </section>
+
+    <section class="modaldos">
+      <div style="background-color: #d6f2fc;" class="modal__container">
+        <video style="width: 235px; " class="" src="../assets/img/video (3).mp4" autoplay muted loop></video>
+        <!-- <h2 class="modal__title">Proximamente modelos de sudaderas</h2>
+      <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la expansión de nuestra marca, ya
+        tenemos pago con tarjeta de
+        crédito y
+        débito.<br>
+        Consulta los terminos y condiciones y las tarjetas participantes.<br>
+      </p> -->
+        <a href="#" class="modal__closedos">Cerrar</a>
+      </div>
+    </section>
+
+    <section class="modaltres">
+      <div class="modal__container">
+        <img src="https://i.ytimg.com/vi/nPHrIcnlTWo/maxresdefault.jpg " class="modal__img">
+        <h2 class="modal__title text-center">La calidad de nuestros productos</h2>
+        <p style="font-size: large;" class="modal__paragraph text-center">Nuestros productos pasan por estandares de
+          calidad muy rugurosos . Hacemos puebas con la competencia.
+          débito.<br> Esto con el fin de brindar siempre la mejor calidad
+          <br>
+        </p>
+        <a href="#" class="modal__closetres">Cerrar</a>
+      </div>
+    </section>
+
+    <section class="modalcuatro">
+      <div style="background-color: #d6f2fc;" class="modal__container">
+        <!-- <img src="https://www.remedi.org.mx/images/cemudi/formas-pago.png" class="modal__img"> -->
+        <video style="width: 235px; " class="" src="../assets/img/video (5).mp4" autoplay muted loop></video>
+
+        <!-- <h2 class="modal__title">Luis eres el mejor</h2>
+      <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la expansión de nuestra marca, ya
+        tenemos pago con tarjeta de
+        crédito y
+        débito.<br>
+        Consulta los terminos y condiciones y las tarjetas participantes.<br>
+      </p> -->
+        <a href="#" class="modal__closecuatro">Cerrar</a>
+      </div>
+    </section>
+
+    <section class="modalcinco">
+      <div class="modal__container">
+        <img src="https://centribal.com/wp-content/uploads/2020/09/5-indicadores-satisfaccio%CC%81n-cliente-copia.png"
+          class="modal__img">
+        <h2 class="modal__title">Satisfacción del cliente</h2>
+        <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la confianza que tienen los clientes
+          hacia nuestros productos y nuestro servicio.
+          <br>
+          Hemos mejorado nuestro nivel de satisfacción tanto en experiencia de compra como en calidad de servicio.<br>
+        </p>
+        <a href="#" class="modal__closecinco">Cerrar</a>
+      </div>
+    </section>
+
+    <section class="modalseis">
+      <div class="modal__container">
+        <img
+          src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1529574610/content-items/002/397/632/foodmarket-original.png?1529574610"
+          class="modal__img">
+        <h2 class="modal__title">Mejorarmos nuestra UX</h2>
+        <p style="font-size: large;" class="modal__paragraph text-center">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Est pariatur nemo
+          tempore
+          repellat? Ullam sed officia.<br>
+        </p>
+        <a href="#" class="modal__closeseis">Cerrar</a>
+      </div>
+    </section>
+
+    <!-- 
+  <section class="modalsiete">
+    <div class="modal__container">
+      <video class="d-block w-100 img-carruselI modal__img" src="../assets/img/video (3).mp4" alt="Third slide" autoplay
+        muted loop></video>
+      <a href="#" class="modal__closesiete">Cerrar</a>
+    </div>
+  </section> -->
+
+
+    <footer class=" footer-style">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <h3>COMPRAS</h3>
+            <p class="parrafos">
+              Cambio y devoluciones
+            </p>
+            <P class="parrafos">Información de Envio</P>
+            <p class="parrafos">Formas de pago</p>
+          </div>
+          <div class="col-md-4 footer-col">
+          </div>
+          <div class="col-md-4 footer-col">
+            <h3>CONTACTO</h3>
+            <p class="parrafoss"><a target="_blank" href="mailto:contacto@techno.com.mx">contacto@techno.com.mx</a></p>
+
+            <p class="parrafos"> 5543546799</p>
+          </div>
+        </div>
       </div>
 
-    </div>
-  </section>
 
-
-  <section class="modal">
-    <div class="modal__container">
-      <img src="https://www.remedi.org.mx/images/cemudi/formas-pago.png" class="modal__img">
-      <h2 class="modal__title">¡Nuevas formas de pago!</h2>
-      <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la expansión de nuestra marca, ya
-        tenemos pago con tarjeta de
-        crédito y
-        débito.<br>
-        Consulta los terminos y condiciones y las tarjetas participantes.<br>
-      </p>
-      <a href="#" class="modal__close">Cerrar</a>
-    </div>
-  </section>
-
-  <section class="modaldos">
-    <div class="modal__container">
-      <img
-        src="https://m.media-amazon.com/images/I/B1i3u9-Q-KS._CLa%7C2140%2C2000%7CB10SSzW14NS.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX342_.png"
-        class="modal__img">
-      <h2 class="modal__title">Proximamente modelos de sudaderas</h2>
-      <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la expansión de nuestra marca, ya
-        tenemos pago con tarjeta de
-        crédito y
-        débito.<br>
-        Consulta los terminos y condiciones y las tarjetas participantes.<br>
-      </p>
-      <a href="#" class="modal__closedos">Cerrar</a>
-    </div>
-  </section>
-
-  <section class="modaltres">
-    <div class="modal__container">
-      <img src="https://www.remedi.org.mx/images/cemudi/formas-pago.png" class="modal__img">
-      <h2 class="modal__title">La calidad de nuestros productos</h2>
-      <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la expansión de nuestra marca, ya
-        tenemos pago con tarjeta de
-        crédito y
-        débito.<br>
-        Consulta los terminos y condiciones y las tarjetas participantes.<br>
-      </p>
-      <a href="#" class="modal__closetres">Cerrar</a>
-    </div>
-  </section>
-
-  <section class="modalcuatro">
-    <div class="modal__container">
-      <img src="https://www.remedi.org.mx/images/cemudi/formas-pago.png" class="modal__img">
-      <h2 class="modal__title">Luis eres el mejor</h2>
-      <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la expansión de nuestra marca, ya
-        tenemos pago con tarjeta de
-        crédito y
-        débito.<br>
-        Consulta los terminos y condiciones y las tarjetas participantes.<br>
-      </p>
-      <a href="#" class="modal__closecuatro">Cerrar</a>
-    </div>
-  </section>
-
-  <section class="modalcinco">
-    <div class="modal__container">
-      <img src="https://centribal.com/wp-content/uploads/2020/09/5-indicadores-satisfaccio%CC%81n-cliente-copia.png"
-        class="modal__img">
-      <h2 class="modal__title">Satisfacción del cliente</h2>
-      <p style="font-size: large;" class="modal__paragraph text-center">Gracias a la expansión de nuestra marca, ya
-        tenemos pago con tarjeta de
-        crédito y
-        débito.<br>
-        Consulta los terminos y condiciones y las tarjetas participantes.<br>
-      </p>
-      <a href="#" class="modal__closecinco">Cerrar</a>
-    </div>
-  </section>
-
-  <section class="modalseis">
-    <div class="modal__container">
-      <img
-        src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1529574610/content-items/002/397/632/foodmarket-original.png?1529574610"
-        class="modal__img">
-      <h2 class="modal__title">Mejorarmos nuestra UX</h2>
-      <p style="font-size: large;" class="modal__paragraph text-center">Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Est pariatur nemo
-        tempore
-        repellat? Ullam sed officia.<br>
-      </p>
-      <a href="#" class="modal__closeseis">Cerrar</a>
-    </div>
-  </section>
-
-
-  <footer class=" footer-style">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col">
-          <h3>COMPRAS</h3>
-          <p class="parrafos">
-            Cambio y devoluciones
-          </p>
-          <P class="parrafos">Información de Envio</P>
-          <p class="parrafos">Formas de pago</p>
-        </div>
-        <div class="col-md-4 footer-col">
-        </div>
-        <div class="col-md-4 footer-col">
-          <h3>CONTACTO</h3>
-          <p class="parrafoss"><a target="_blank" href="mailto:contacto@techno.com.mx">contacto@techno.com.mx</a></p>
-
-          <p class="parrafos"> 5543546799</p>
-        </div>
+      <div class="container">
+        <img src="../assets/img/logo1.png" alt="Logotipo" style="width: 200px;height: 250px; margin-right: 100px;"
+          class="mx-auto d-block">
       </div>
-    </div>
+    </footer>
+  </div>
 
 
-    <div class="container">
-      <img src="../assets/img/logo1.png" alt="Logotipo" style="width: 200px;height: 250px; margin-right: 100px;"
-        class="mx-auto d-block">
-    </div>
-  </footer>
+  <script>
+    function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+      document.getElementById("myDiv").style.background = "white";
+      document.getElementById("myDiv").style.textAlign = "initial ";
+    }
 
 
+
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

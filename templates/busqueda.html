@@ -19,164 +19,189 @@
 
 </head>
 
-<body>
-  <!-- navbar -->
-  <div class="container-fluid">
-    <div class="bgn-black text-white row">
-      <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
+<body onload="myFunction()" style="margin:0;">
 
-      <a href="busqueda.html?search=favoritos" class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="30"
-          fill="white" class="bi bi-suit-heart-fill " viewBox="0 0 16 16">
-          <path
-            d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
-        </svg></a>
-      <a href="carrito.html" class="d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-cart-fill mx-2 mx-sm-4"
-          viewBox="0 0 16 16">
-          <path
-            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-        </svg>
-      </a>
-      <a href="../templates/ingreso.html" class="d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-person-circle mr-4"
-          viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-          <path fill-rule="evenodd"
-            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-        </svg>
-      </a>
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <!-- navbar -->
+    <div class="container-fluid">
+      <div class="bgn-black text-white row">
+        <a href="../index.html" class="col-auto mr-auto"><img src="../assets/img/logo4.png" alt="" class="img-nav"></a>
+
+        <a href="busqueda.html?search=favoritos" class="d-flex align-items-center"><svg
+            xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-suit-heart-fill "
+            viewBox="0 0 16 16">
+            <path
+              d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+          </svg></a>
+        <a href="carrito.html" class="d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white"
+            class="bi bi-cart-fill mx-2 mx-sm-4" viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+        </a>
+        <a href="../templates/ingreso.html" class="d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-person-circle mr-4"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="bb-red bt-blue"></div>
-  <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="bb-red bt-blue"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bgn-black">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <form class="form-inline navbar-brand ">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    </form>
+      <form style="margin-top: 5px; margin-bottom: 5px;" class="form-inline navbar-brand ">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Mujer">Mujeres<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Hombre">Hombres<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Niñx">Niñxs<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="busqueda.html?search=Accesorio">Accesorios<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- fin navbar -->
-
-
-
-  <!-- inicio ruta -->
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-      <li class="breadcrumb-item active" aria-current="page" id="categoria"></li>
-    </ol>
-  </nav>
-  <!-- fin ruta -->
-
-  <div class="container-fluid">
-    <div class="row" id="contenido" style="min-height: 70vh;">
-
-
-    </div>
-
-
-  </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Mujer">Mujeres<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Hombre">Hombres<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Niñx">Niñxs<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="busqueda.html?search=Accesorio">Accesorios<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="quienes-somos.html">Nosotros<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin navbar -->
 
 
 
+    <!-- inicio ruta -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page" id="categoria"></li>
+      </ol>
+    </nav>
+    <!-- fin ruta -->
 
-  <div class="container-fluid">
-    <div class="row">
+    <div class="container-fluid">
+      <div class="row" id="contenido" style="min-height: 70vh;">
+
+
+      </div>
 
 
     </div>
 
 
-  </div>
 
 
-
-
-
-
-
-
-  <section class="subscribe-area pb-50 pt-70">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
 
-        <div class="col-md-4">
-          <div class="subscribe-text mb-15">
-            <h2>SUBSCRÍBETE Y ENTÉRATE <br> DE LAS NOVEDADES</h2>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <section class="subscribe-area pb-50 pt-70">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="subscribe-text mb-15">
+              <h2>SUBSCRÍBETE Y ENTÉRATE <br> DE LAS NOVEDADES</h2>
+            </div>
           </div>
-        </div>
-        <div class="col-md-8">
-          <div class="subscribe-wrapper subscribe2-wrapper mb-15">
-            <div class="subscribe-form">
-              <form action="#">
-                <input placeholder="tu@correo.com" type="email">
-                <button>SUSCRIRSE</button>
-              </form>
+          <div class="col-md-8">
+            <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+              <div class="subscribe-form">
+                <form action="#">
+                  <input placeholder="tu@correo.com" type="email">
+                  <button>SUSCRIRSE</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
+
+      </div>
+    </section>
+
+
+
+    <footer class=" footer-style">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <h3>COMPRAS</h3>
+            <p class="parrafos">
+              Cambio y devoluciones
+            </p>
+            <P class="parrafos">Información de Envio</P>
+            <p class="parrafos">Formas de pago</p>
+          </div>
+          <div class="col-md-4 footer-col">
+          </div>
+          <div class="col-md-4 footer-col">
+            <h3>CONTACTO</h3>
+            <p class="parrafoss"><a target="_blank" href="mailto:contacto@techno.com.mx">contacto@techno.com.mx</a></p>
+
+            <p class="parrafos"> 5543546799</p>
+          </div>
+        </div>
       </div>
 
-    </div>
-  </section>
 
-
-
-  <footer class=" footer-style">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col">
-          <h3>COMPRAS</h3>
-          <p class="parrafos">
-            Cambio y devoluciones
-          </p>
-          <P class="parrafos">Información de Envio</P>
-          <p class="parrafos">Formas de pago</p>
-        </div>
-        <div class="col-md-4 footer-col">
-        </div>
-        <div class="col-md-4 footer-col">
-          <h3>CONTACTO</h3>
-          <p class="parrafoss"><a target="_blank" href="mailto:contacto@techno.com.mx">contacto@techno.com.mx</a></p>
-
-          <p class="parrafos"> 5543546799</p>
-        </div>
+      <div class="container">
+        <img src="../assets/img/logo1.png" alt="Logotipo" style="width: 200px;height: 250px; margin-right: 100px;"
+          class="mx-auto d-block">
       </div>
-    </div>
-
-
-    <div class="container">
-      <img src="../assets/img/logo1.png" alt="Logotipo" style="width: 200px;height: 250px; margin-right: 100px;"
-        class="mx-auto d-block">
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="../assets/js/busqueda.js"></script>
+
+  <script>
+    function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+      document.getElementById("myDiv").style.background = "white";
+      document.getElementById("myDiv").style.textAlign = "initial ";
+
+
+    }
+
+
+
+  </script>
 
 
 </body>

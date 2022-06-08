@@ -5,6 +5,7 @@ const openModaltree = document.querySelector(".tres");
 const openModalfour = document.querySelector(".cuatro");
 const openModalfive = document.querySelector(".cinco");
 const openModalsix = document.querySelector(".seis");
+// const openModalseven = document.querySelector(".siete");
 
 //varibles modal 1
 const modal = document.querySelector(".modal");
@@ -29,6 +30,10 @@ const closeModalfive = document.querySelector(".modal__closecinco");
 //varibles modal 6
 const modalsix = document.querySelector(".modalseis");
 const closeModalsix = document.querySelector(".modal__closeseis");
+
+//variables modal 7
+// const modalseven = document.querySelector(".modalsiete");
+// const closeModalseven = document.querySelector(".modal__closesiete");
 
 // MODAL 1
 openModal.addEventListener("click", (e) => {
@@ -100,3 +105,14 @@ closeModalsix.addEventListener("click", (e) => {
   e.preventDefault();
   modalsix.classList.remove("modal--show");
 });
+
+// MODAL 7
+// openModalseven.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   modalseven.classList.add("modal--show");
+// });
+
+// closeModalseven.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   modalseven.classList.remove("modal--show");
+// });

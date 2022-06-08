@@ -404,11 +404,11 @@ ul {
 }
 
 .modal__close,
-.modal_closedos,
-.modal_closetres,
-.modal_closecuatro,
-.modal_closecinco,
-.modal_closeseis {
+.modal__closedos,
+.modal__closetres,
+.modal__closecuatro,
+.modal__closecinco,
+.modal__closeseis {
   text-decoration: none;
   color: #fff;
   background-color: red;
@@ -441,3 +441,19 @@ ul {
 }
 
 /* fin newsletter modal */
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.social a {
+  font-size: 35px;
+  color: #005c97;
+  transition: all 0.4s;
+}
+
+.social a:hover {
+  color: #fff;
+}
