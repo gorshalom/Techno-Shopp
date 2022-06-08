@@ -189,14 +189,14 @@ function agegarCarrito(id) {
         if (carrito.find(prod => prod.id == id) == undefined) {
             carrito.push(producto);
             localStorage.setItem("carrito", JSON.stringify(carrito));
-            alert("Producto agregado al carrito");
+            
         } else {
-            alert("El producto ya esta en el carrito");                       
+                                   
         }                        
     }else {           
         carrito.push(producto);               
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        alert("Producto agregado al carrito");
+        
     } 
 }
 
@@ -210,14 +210,14 @@ function agegarFavoritos(id) {
         if (favoritos.find(prod => prod.id == id) == undefined) {
             favoritos.push(producto);
             localStorage.setItem("favoritos", JSON.stringify(favoritos));
-            alert("Producto agregado a favoritos");
+           
         } else {
-            alert("El producto ya esta en favoritos");                       
+                                 
         }                        
     }else {           
         favoritos.push(producto);               
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
-        alert("Producto agregado a favoritos");
+        
     } 
 }
 
