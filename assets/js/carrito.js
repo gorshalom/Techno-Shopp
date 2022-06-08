@@ -1,5 +1,5 @@
 //simulacion objeto 
-let data = {
+/* let data = {
     datos: {
         id_cliente: 1,
         nombre_cliente: "Juan",
@@ -36,8 +36,15 @@ let data = {
             id: 1}
         ]
     }
-} 
+}  */
 
+let data = {
+    datos: {
+        id_cliente: 1,
+        nombre_cliente: "Juan",
+        productos: []
+    }
+}
 
 //localstorage
 let carrito=[];
@@ -59,9 +66,9 @@ let precioTotal=0;
 data.datos.productos.forEach(prod => {
     let templateCard = `
         <tr>
-            <td rowspan="2" class="d-none d-sm-block ">
+            <td rowspan="2" class="d-none d-sm-table-cell">
                 <a href="detalle-producto.html">
-                    <img src="${prod.imagen}" alt="producto" class="img-carrito d-none d-sm-inline">
+                    <img src="${prod.imagen}" alt="producto" class="img-carrito">
                 </a>
             </td>
             <td class="col">
@@ -86,7 +93,7 @@ data.datos.productos.forEach(prod => {
                                 d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
                         </svg>
                     </button>
-                    <input type="number" class="form-control input-canti d-inline" value="1" id="cantidad${prod.id}">
+                    <input type="number" class="form-control input-canti d-inline" value="${prod.cantidad}" id="cantidad${prod.id}">
                     <button class="button cont-car border-none d-inline-flex " onclick="sumarProd(cantidad${prod.id})">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-plus-circle align-self-center"
@@ -108,7 +115,7 @@ data.datos.productos.forEach(prod => {
                 </div>
             </td>
         </tr>`;
-    precioTotal+=parseInt(prod.precio);
+    precioTotal += parseInt(prod.precio) * parseInt(prod.cantidad);
     $cuerpoCarrito.innerHTML += templateCard;
 });
 
@@ -116,7 +123,7 @@ let templateTotal = `
 <tr>
     
     <td colspan="3">
-        <p class="align-self-center total-car text-right">Total $${precioTotal}</p>
+        <p class="align-self-center total-car text-right" id="precioTotal">Total $${precioTotal}</p>
     </td>
     </tr>
     <tr>
@@ -132,6 +139,7 @@ let templateTotal = `
 </tr>
 
 `;
+console.log(data.datos.productos);
 
 $cuerpoCarrito.innerHTML += templateTotal;
 
@@ -143,13 +151,24 @@ function borrarCarrito(id){
     location.reload();
 } 
 
-function sumarProd(item){   
-    item.value++;
+function sumarProd(item){
+    let id = item.id;
+    id = id.substring(8);
+    let index = data.datos.productos.findIndex(prod => prod.id == id);
+    data.datos.productos[index].cantidad++;
+    localStorage.setItem("carrito",JSON.stringify(data.datos.productos));
+    location.reload();   
 }
+
 
 function restarProd(item){    
     if(item.value>1){
-        item.value--;
+        let id = item.id;
+        id = id.substring(8);
+        let index = data.datos.productos.findIndex(prod => prod.id == id);
+        data.datos.productos[index].cantidad--;
+        localStorage.setItem("carrito",JSON.stringify(data.datos.productos));
+        location.reload();
     }
 }
 
