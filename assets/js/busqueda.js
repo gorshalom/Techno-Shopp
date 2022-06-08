@@ -182,6 +182,7 @@ data.datos.forEach(prod => {
 function agegarCarrito(id) {
     let producto = data.datos.find(prod => prod.id == id);
     let carrito = [];
+    producto.cantidad = 1;
 
     if(localStorage.getItem("carrito") != null){        
         carrito = JSON.parse(localStorage.getItem("carrito"));
