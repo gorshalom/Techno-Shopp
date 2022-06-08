@@ -117,7 +117,7 @@ if (busca === "favoritos") {
         data.datos=favoritos;                              
     }else {           
         data.datos=[];
-        alert("No hay favoritos registrados");
+        
     }    
 }
 

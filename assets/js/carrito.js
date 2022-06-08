@@ -53,7 +53,7 @@ if(localStorage.getItem("carrito") != null){
     data.datos.productos=carrito;                              
 }else {           
     data.datos.productos=[];
-    alert("No hay productos en el carrito");
+    
 }    
 
 
