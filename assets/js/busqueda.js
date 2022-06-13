@@ -12,7 +12,7 @@ data = {
         //niñx
         {
             id: 9,
-            nombre: "Vengance niño9",
+            nombre: "Nerd T-Shirt",
             precio: 229,
             categoria: "Niñx",
             calificacion: 3,
@@ -20,7 +20,7 @@ data = {
         },
         {
             id: 10,
-            nombre: "Vengance niño9",
+            nombre: "Hacker T-Shirt",
             precio: 229,
             categoria: "Niñx",
             calificacion: 3,
@@ -28,7 +28,7 @@ data = {
         },
         {
             id: 11,
-            nombre: "Vengance niño9",
+            nombre: "Pithon T-Shirt",
             precio: 229,
             categoria: "Niñx",
             calificacion: 3,
@@ -60,14 +60,14 @@ data = {
         //" /*****Hombres******/
         {
             id: 209,
-            nombre: "T-shirt GitHub",
+            nombre: "T-shirt CSS",
             precio: 159,
             categoria: "Hombre",
             calificacion: 4,
             imagen: "https://i.postimg.cc/ZKymppRG/ssrco-long-t-shirt-mens-101010-01c5ca27c6-front-square-three-quarter-x1000-bg-f8f8f8-1.jpg",
         }, {
             id: 210,
-            nombre: "T-shirt Stack",
+            nombre: "T-shirt Stack overflow",
             precio: 189,
             categoria: "Hombre",
             calificacion: 5,
@@ -84,22 +84,22 @@ data = {
         //accesorios
         {
             id: 309,
-            nombre: "T-shirt GitHub",
-            precio: 159,
+            nombre: "Taza javascript",
+            precio: 60,
             categoria: "Accesorio",
             calificacion: 4,
             imagen: "https://i.postimg.cc/Ls55RXB9/mug-tall-x1000-right-pad-1000x1000-f8f8f8.jpg",
         }, {
             id: 310,
-            nombre: "T-shirt Stack",
-            precio: 189,
+            nombre: "Taza Git",
+            precio: 60,
             categoria: "Accesorio",
             calificacion: 5,
             imagen: "https://i.postimg.cc/250WFMT6/mug-tall-x1000-right-pad-1000x1000-f8f8f8-u3.jpg",
         }, {
             id: 311,
-            nombre: "T-shirt Java",
-            precio: 229,
+            nombre: "Taza colores",
+            precio: 65,
             categoria: "Accesorio",
             calificacion: 4,
             imagen: "https://i.postimg.cc/YC0wbqcY/mug-tall-x1000-center-pad-750x1000-f8f8f8-u2.jpg",
@@ -117,7 +117,7 @@ if (busca === "favoritos") {
         data.datos=favoritos;                              
     }else {           
         data.datos=[];
-        alert("No hay favoritos registrados");
+        
     }    
 }
 
@@ -189,14 +189,14 @@ function agegarCarrito(id) {
         if (carrito.find(prod => prod.id == id) == undefined) {
             carrito.push(producto);
             localStorage.setItem("carrito", JSON.stringify(carrito));
-            alert("Producto agregado al carrito");
+            
         } else {
-            alert("El producto ya esta en el carrito");                       
+                                   
         }                        
     }else {           
         carrito.push(producto);               
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        alert("Producto agregado al carrito");
+        
     } 
 }
 
@@ -210,14 +210,14 @@ function agegarFavoritos(id) {
         if (favoritos.find(prod => prod.id == id) == undefined) {
             favoritos.push(producto);
             localStorage.setItem("favoritos", JSON.stringify(favoritos));
-            alert("Producto agregado a favoritos");
+           
         } else {
-            alert("El producto ya esta en favoritos");                       
+                                 
         }                        
     }else {           
         favoritos.push(producto);               
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
-        alert("Producto agregado a favoritos");
+        
     } 
 }
 

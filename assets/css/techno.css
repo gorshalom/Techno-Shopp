@@ -2,6 +2,8 @@
 .img-nav {
   width: 148px;
   margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .bgn-black {
   background-color: #000000 !important;
@@ -30,7 +32,7 @@
 }
 
 .img-carruselI {
-  height: calc(80vh);
+  height: calc(76vh);
   object-fit: fill;
   object-position: center;
 }
