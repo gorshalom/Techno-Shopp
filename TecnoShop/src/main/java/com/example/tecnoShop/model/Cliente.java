@@ -1,7 +1,6 @@
 package com.example.tecnoShop.model;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,17 +21,19 @@ public class Cliente {
 	@Column(nullable = false, name="id_cliente")
 	private Integer id;
 	
-	@Column(nullable = false, name="email")
-	private String email;
 	
 	@Column(nullable = false, name="nombre")
 	private String nombre;
 	
+	@Column(nullable = false, name="telefono")
+	private String telefono;
+	
+	@Column(nullable = false, name="email")
+	private String email;
+	
+
 	@Column(nullable = false, name="contrasenia")
 	private String contrasenia;	
-	
-	@Column(nullable = false, name="telefono")
-	private String telefono;	
 	
 	@Column(nullable = true, name="creado")
 	private LocalDateTime creado;
@@ -112,3 +113,7 @@ public class Cliente {
 	
 
 }
+
+
+
+

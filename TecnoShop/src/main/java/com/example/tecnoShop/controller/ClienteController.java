@@ -1,9 +1,10 @@
+
 package com.example.tecnoShop.controller;
 
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,9 +28,13 @@ import com.example.tecnoShop.service.ClienteService;
 public class ClienteController {
 	
 	private final ClienteService clienteService;
-	
-	public ClienteController(@Autowired ClienteService clienteService) {
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
+
+ 
+	public ClienteController(@Autowired ClienteService clienteService,@Autowired BCryptPasswordEncoder bCryptPasswordEncoder) {
 		this.clienteService=clienteService;
+        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+
 	}
 	
 	@GetMapping("/{id}")
@@ -55,10 +60,12 @@ public class ClienteController {
 	// Escribir 
 	@PostMapping
 	public Cliente saveClientes(@RequestBody Cliente cliente) {
+        cliente.setContrasenia(bCryptPasswordEncoder.encode(cliente.getContrasenia()));
+
 		System.out.println(cliente);
 		return clienteService.saveCliente(cliente);
 	}
-	
+	  
 	// Borrar
 	@DeleteMapping("delete/{id}")
 	public void deleteCliente(@PathVariable Integer id) {

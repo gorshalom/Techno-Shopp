@@ -3,6 +3,9 @@ package com.example.tecnoShop.service;
 import java.util.List;
 //import java.util.Map;
 
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
 import com.example.tecnoShop.model.Cliente;
 
 
@@ -22,5 +25,7 @@ public interface ClienteService {
 	
 	//Actualizar
 	Cliente updateCliente(Cliente cliente);
+	UserDetails loadUserByUsername(String email) throws UsernameNotFoundException;
+	
 
 }
